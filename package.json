@@ -1,0 +1,23 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "Demo webpack setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/P-nguyen/webpack-demo.git"
+  },
+  "author": "Peter Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/P-nguyen/webpack-demo/issues"
+  },
+  "homepage": "https://github.com/P-nguyen/webpack-demo#readme",
+  "devDependencies": {
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
