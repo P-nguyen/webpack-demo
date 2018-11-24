@@ -4,11 +4,11 @@
 /*!************************!*\
   !*** ./src/helpers.js ***!
   \************************/
-/*! exports provided: login, addToDom, addImg */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"login\", function() { return login; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"addToDom\", function() { return addToDom; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"addImg\", function() { return addImg; });\n/* harmony import */ var _users__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./users */ \"./src/users.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\n\r\nconst login = (username, password) => {\r\n    const user = _users__WEBPACK_IMPORTED_MODULE_0__[\"default\"][username];\r\n\r\n    if(user && user.password === password){\r\n        return \"user is looged in as: \" + user.name;\r\n    }\r\n\r\n    return \"Invalid username and/or password\";\r\n}\r\n\r\nconst addToDom = ( type, text, className = 'red') => {\r\n    const element = jquery__WEBPACK_IMPORTED_MODULE_1___default()(`<${type}>`, { \r\n        text,\r\n        class: className \r\n    });\r\n\r\n    jquery__WEBPACK_IMPORTED_MODULE_1___default()('#root').append(element);\r\n};\r\n\r\nconst addImg = (src) => {\r\n    const img = jquery__WEBPACK_IMPORTED_MODULE_1___default()('<img>',{ src });\r\n\r\n    jquery__WEBPACK_IMPORTED_MODULE_1___default()('#root').append(img);\r\n}\n\n//# sourceURL=webpack:///./src/helpers.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.addImg = exports.addToDom = exports.login = undefined;\n\nvar _users = __webpack_require__(/*! ./users */ \"./src/users.js\");\n\nvar _users2 = _interopRequireDefault(_users);\n\nvar _jquery = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\nvar _jquery2 = _interopRequireDefault(_jquery);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar login = exports.login = function login(username, password) {\n    var user = _users2.default[username];\n\n    if (user && user.password === password) {\n        return \"user is looged in as: \" + user.name;\n    }\n\n    return \"Invalid username and/or password\";\n};\n\nvar addToDom = exports.addToDom = function addToDom(type, text) {\n    var className = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'red';\n\n    var element = (0, _jquery2.default)('<' + type + '>', {\n        text: text,\n        class: className\n    });\n\n    (0, _jquery2.default)('#root').append(element);\n};\n\nvar addImg = exports.addImg = function addImg(src) {\n    var img = (0, _jquery2.default)('<img>', { src: src });\n\n    (0, _jquery2.default)('#root').append(img);\n};\n\n//# sourceURL=webpack:///./src/helpers.js?");
 
 /***/ }),
 
@@ -16,11 +16,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*!**********************!*\
   !*** ./src/users.js ***!
   \**********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\r\n    DiscoStu: {\r\n        password: 'asdf',\r\n        name: 'Stu Dumworth'\r\n    },\r\n    SassySally: {\r\n        password: 'qwer',\r\n        name: 'Heather Newman'\r\n    },\r\n    HopeWaits: {\r\n        password: 'zxcv',\r\n        name: 'Anna Dumworth'\r\n    },\r\n    DietCoke: {\r\n        password: 'justforthehasteofit',\r\n        name: 'ben hur'\r\n    }\r\n});\n\n//# sourceURL=webpack:///./src/users.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = {\n    DiscoStu: {\n        password: 'asdf',\n        name: 'Stu Dumworth'\n    },\n    SassySally: {\n        password: 'qwer',\n        name: 'Heather Newman'\n    },\n    HopeWaits: {\n        password: 'zxcv',\n        name: 'Anna Dumworth'\n    },\n    DietCoke: {\n        password: 'justforthehasteofit',\n        name: 'ben hur'\n    }\n};\n\n//# sourceURL=webpack:///./src/users.js?");
 
 /***/ })
 
